@@ -28,27 +28,8 @@
     <version>11.2.0.1.0</version>
 </dependency>
   </dependencies>
-  <build>
-  <plugins>
-	<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <executions>
-        <execution>
-            <phase>package</phase>
-            <configuration>
-                <attachClasses>true</attachClasses>
-                <webXml>${basedir}/src/main/webapp/WEB-INF/web.xml</webXml>
-            </configuration>
-            <goals>
-                <goal>inplace</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
-</plugins>   
-
-<finalName>mavenServletJsp</finalName>
+  <build>  
+	<finalName>mavenServletJsp</finalName>
   </build>
   
   
