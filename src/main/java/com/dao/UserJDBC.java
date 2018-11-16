@@ -16,7 +16,7 @@ public class UserJDBC {
 	public Connection myConnection(){
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "Newuser123");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@infva07161:1521:xe", "system", "Newuser123");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
